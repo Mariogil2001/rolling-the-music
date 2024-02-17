@@ -2,7 +2,7 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
   export let id = "inicio";
-  let logo= "https://raw.githubusercontent.com/Mariogil2001/rolling-the-music/main/src/img/logo-remove.png?token=GHSAT0AAAAAACMVSIHWRHDIBTY2ZCDVCLDEZOQNCZQ";
+  import logo from "../img/logo-remove.png";
 </script>
 
 <section {id}>
