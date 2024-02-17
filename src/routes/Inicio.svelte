@@ -2,6 +2,7 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
   export let id = "inicio";
+  let logo= "https://raw.githubusercontent.com/Mariogil2001/rolling-the-music/main/src/img/logo-remove.png?token=GHSAT0AAAAAACMVSIHWRHDIBTY2ZCDVCLDEZOQNCZQ";
 </script>
 
 <section {id}>
@@ -10,7 +11,7 @@
     <div class="row align-items-center">
       <div class="col-md-7 order-md-2">
         <img
-          src="../src/img/logo-remove.png"
+          src={logo}
           alt="Logo Rolling The Music"
           class="img-fluid mb-4 animated-image"
         />
