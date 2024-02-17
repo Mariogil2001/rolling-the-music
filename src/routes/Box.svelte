@@ -25,7 +25,7 @@
     <div class="col-md-6">
       <h2>PM Palme</h2>
       <p class="text-justify">
-        THoy entrevistamos a Víctor, cantante de Peme Palme, un grupo con un
+        Hoy entrevistamos a Víctor, cantante de Peme Palme, un grupo con un
         toque veraniego y muy buen rollo, con canciones pegadizas y con mucho
         ritmo. Su trayectoria empezó en 2017 en Cullera, un lugar que les ha
         inspirado para componer sus canciones. ¡Escúcha sus inicios y sus
