@@ -1,11 +1,10 @@
 <script>
-  import { fade } from 'svelte/transition';
+  import { fade } from "svelte/transition";
   import "bootstrap/dist/css/bootstrap.min.css";
   export let id = "contacto";
   import check from "../img/check.svg";
   import mail from "../img/mail.svg";
   import instagram_logo from "../img/instagram_icon.svg";
-  let correo = "contactrollingthemusic@gmail.com";
   const instagram = "https://www.instagram.com/rollingthemusic/";
 
   let mostrarCorreo = false; // Variable de estado para controlar qué imagen mostrar en el botón de correo
@@ -23,17 +22,18 @@
   // Función para copiar el correo electrónico al portapapeles
   function copiarCorreo() {
     const correo = "contactrollingthemusic@gmail.com"; // Aquí debes colocar tu dirección de correo electrónico
-    navigator.clipboard.writeText(correo)
+    navigator.clipboard
+      .writeText(correo)
       .then(() => {
         cambiarImagenCorreo(); // Cambiar la imagen del botón de correo
       })
-      .catch(err => {
-        console.error('Error al copiar el correo electrónico: ', err);
+      .catch((err) => {
+        console.error("Error al copiar el correo electrónico: ", err);
       });
   }
 </script>
 
-<section id={id}>
+<section {id}>
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-md-5 text-center">
@@ -41,18 +41,28 @@
         <div class="d-flex align-items-center justify-content-center mb-4">
           <!-- Botón para Instagram -->
           <a href={instagram} target="_blank" class="me-4 btn-correo">
-            <img src={instagram_logo} alt={instagram} style="width: 40px;"/>
+            <img src={instagram_logo} alt={instagram} style="width: 40px;" />
           </a>
           <!-- Botón para copiar correo electrónico -->
-          <button on:click={copiarCorreo} class="btn btn-outline-dark btn-correo">
+          <!-- svelte-ignore a11y-invalid-attribute -->
+          <a
+            href="javascript:void(0);"
+            on:click|preventDefault={copiarCorreo}
+            class="btn-correo"
+          >
             {#if mostrarCorreo}
-              <img src={check} alt="Correo Copiado"/>
+              <img src={check} alt="Correo Copiado" style="width: 40px;" />
             {:else}
-              <img src={mail} alt="Correo Original"/>
+              <img src={mail} alt="Correo Original" style="width: 40px;" />
             {/if}
-          </button>
+          </a>
         </div>
-        <p class="lead mb-5 email-link" onclick="location.href='mailto:contactrollingthemusic@gmail.com';">contactrollingthemusic@gmail.com</p>
+        <p
+          class="lead mb-5 email-link"
+          onclick="location.href='mailto:contactrollingthemusic@gmail.com';"
+        >
+          contactrollingthemusic@gmail.com
+        </p>
       </div>
     </div>
   </div>
@@ -61,7 +71,9 @@
 <style>
   /* Estilos de transición */
   .fade {
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition:
+      opacity 0.5s ease,
+      transform 0.5s ease;
   }
 
   .fade-in {

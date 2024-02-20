@@ -1,10 +1,14 @@
 <script>
   import "bootstrap/dist/css/bootstrap.min.css";
   import "../css/Noticias.css";
-  let pmpalme =
-    "https://www.ivoox.com/player_ej_124394773_6_1.html?c1=e5f213%27";
-  let bienvenida =
-    "https://www.ivoox.com/player_ej_124120144_6_1.html?c1=ebeb75";
+  import { podcasts } from "../js/podcasts.js";
+
+  // Ordenar los podcasts por fecha (más reciente primero)
+  const sortedPodcasts = [...podcasts].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+  // Obtener el podcast más reciente
+  const latestPodcast = sortedPodcasts[0];
 </script>
 
 <div class="col-md-7">
@@ -12,55 +16,74 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <div class="embed-responsive embed-responsive-16by9 ratio ratio-16x9">
         <iframe
-          title="Podcast PM Palme"
+          title={"Podcast de " + latestPodcast.title}
           class="embed-responsive-item"
-          src={pmpalme}
+          src={latestPodcast.url}
           allowfullscreen
         ></iframe>
       </div>
     </div>
-    <div class="col-md-6">
-      <h2>PM Palme</h2>
-      <p class="text-justify">
-        Hoy entrevistamos a Víctor, cantante de Peme Palme, un grupo con un
-        toque veraniego y muy buen rollo, con canciones pegadizas y con mucho
-        ritmo. Su trayectoria empezó en 2017 en Cullera, un lugar que les ha
-        inspirado para componer sus canciones. ¡Escúcha sus inicios y sus
-        consejos! Además, hoy hay una sección especial en la que tendrás que
-        adivinar si el nombre de una banda es ficticio o de los noventa, ¿crees
-        que existió No me pises que llevo chanclas? o ¿Písame que llevo
-        converse?
-      </p>
+    <div class="col-sm-6">
+      <h2>{latestPodcast.title}</h2>
+      <p class="text-justify">{latestPodcast.description}</p>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container mt-5">
   <div class="row">
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9 ratio ratio-16x9">
-        <iframe
-          title="Podcast de Bienvenida"
-          class="embed-responsive-item"
-          src={bienvenida}
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <h2>¡Bienvenida!</h2>
-      <p class="text-justify">
-        ¡Hola! Somos Julia y Maya, estudiantes de periodismo y comunicación
-        audiovisual. Tenemos muchas ganas e ilusión por realizar este podcast
-        donde entrevistaremos a cantantes emergentes y profesionales de la
-        música. Escúchanos para conocer nuestra historia y motivaciones para
-        realizar Rolling The Music y ayudar a que los jóvenes cantantes puedan
-        alcanzar su sueño. Somos estudiantes universitarias con motivación y
-        pasión por la música.
-      </p>
+    <div class="col-md-12 text-center">
+      <a href="/podcasts" class="btn btn-dark mx-auto mb-5"
+        >Ver más</a
+      >
     </div>
   </div>
 </div>
+
+<style>
+  /* Media query para pantallas pequeñas */
+  @media screen and (max-width: 575.98px) {
+    .btn {
+      font-size: 1.1rem;
+      padding: 0.4rem 1rem;
+    }
+  }
+  /* Media query para tablets y pantallas pequeñas */
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .btn {
+      font-size: 1.2rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  /* Media query para pantallas medianas */
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .btn {
+      font-size: 1.3rem;
+      padding: 0.6rem 1.8rem;
+    }
+  }
+  /* Media query para pantallas grandes */
+  @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .btn {
+      font-size: 1.4rem;
+      padding: 0.7rem 2rem;
+    }
+  }
+  /* Media query para pantallas muy grandes */
+  @media screen and (min-width: 1200px) {
+    .btn {
+      font-size: 1.3rem;
+      padding: 0.8rem 2.2rem;
+      margin-bottom: 1rem;
+      margin-top: -5rem;
+    }
+  }
+  .btn-dark:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+  }
+</style>

@@ -1,10 +1,11 @@
-# create-svelte
+# Rolling The Music 🎤
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Todo lo que necesitas para construir un proyecto Svelte, impulsado por [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
+## Creación de un proyecto
 
-If you're seeing this, you've probably already done this step. Congrats!
+
+Si estás viendo esto, probablemente ya hayas completado este paso. ¡Felicitaciones!
 
 ```bash
 # create a new project in the current directory
@@ -14,9 +15,9 @@ npm create svelte@latest
 npm create svelte@latest my-app
 ```
 
-## Developing
+## Desarrollo
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Una vez que hayas creado un proyecto e instalado las dependencias con `npm install` (o `pnpm install` o `yarn`), inicia un servidor de desarrollo:
 
 ```bash
 npm run dev
@@ -25,14 +26,14 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## Construcción
 
-To create a production version of your app:
+Para crear una versión de producción de tu aplicación:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Puedes previsualizar la construcción de producción con `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> Para desplegar tu aplicación, es posible que necesites instalar un [adaptador](https://kit.svelte.dev/docs/adapters) para tu entorno de destino.

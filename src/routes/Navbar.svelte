@@ -19,22 +19,12 @@ onMount(() => {
     }
   }
 
-  function scrollIntoView(event) {
-    const targetId = event.target.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    console.log("ID:", targetId); // Aquí se muestra el identificador en la consola
-    if (targetElement) {
-      event.preventDefault();
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }
 </script>
 
 <nav>
   <div>
-    <a href="#inicio" on:click|preventDefault={scrollIntoView}>Inicio</a>
-    <a href="#noticias" on:click|preventDefault={scrollIntoView}>Noticias</a>
-    <a href="#contacto" on:click|preventDefault={scrollIntoView}>Contacto</a>
+    <a href="/" >Inicio</a>
+    <a href="/podcasts">Podcasts</a>
   </div>
 </nav>
 
