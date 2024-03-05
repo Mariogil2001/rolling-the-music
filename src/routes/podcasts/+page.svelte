@@ -13,8 +13,8 @@
   }
 </script>
 
-<div class="col-md-7">
-  <h3 class="display-4 text-uppercase mb-4">Todos los Podcasts</h3>
+<div class="container">
+  <h1 class="mb-4 text-center align-content-center">Todos los Podcasts</h1>
 </div>
 
 <div class="container">
@@ -38,3 +38,8 @@
     </div>
   {/each}
 </div>
+<style>
+  h1{
+    font-family: 'Fira Sans', sans-serif;
+  }
+</style>

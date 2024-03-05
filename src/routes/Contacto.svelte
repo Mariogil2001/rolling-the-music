@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-md-5 text-center">
-        <h2 class="display-4 text-uppercase mb-4">Contacto</h2>
+        <h3 class="display-4 text-uppercase mb-4">Contacto</h3>
         <div class="d-flex align-items-center justify-content-center mb-4">
           <!-- Botón para Instagram -->
           <a href={instagram} target="_blank" class="me-4 btn-correo">
@@ -48,7 +48,7 @@
           <a
             href="javascript:void(0);"
             on:click|preventDefault={copiarCorreo}
-            class="btn-correo"
+            class="btn-correo" id="correo"
           >
             {#if mostrarCorreo}
               <img src={check} alt="Correo Copiado" style="width: 40px;" />
@@ -69,6 +69,10 @@
 </section>
 
 <style>
+
+p{
+  cursor: pointer;
+}
   /* Estilos de transición */
   .fade {
     transition:

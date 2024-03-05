@@ -9,15 +9,17 @@
   <!-- Contenedor para restringir los lados -->
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-5 col-lg-6 order-md-2 order-lg-1">
+      <div class="text-center">
+        <h1 class="display-2">Rolling The Music</h1>
+      </div>
+      <div class="col-md-5 col-lg-6 order-md-2 order-lg-1 text-center">
         <img
           src={logo}
           alt="Logo Rolling The Music"
-          class="img-fluid mb-4 animated-image"
+          class="img-fluid mb-4" width="400px"
         />
       </div>
       <div class="col-md-7 col-lg-6 order-md-1 order-lg-2">
-        <h1 class="display-4 text-uppercase mb-4">Rolling The Music</h1>
         <p class="lead text-justify-lg">
           Somos un programa de música que tiene como finalidad ayudar a los
           cantantes emergentes a darse a conocer. En los capítulos podrás
@@ -32,12 +34,16 @@
 </section>
 
 <style>
-  @media screen and (min-width: 1200px) {
-    .animated-image {
-      animation: slideInRight 1s ease-in-out;
-    }
-  }
 
+h1{
+  font-family: 'Fira Sans', sans-serif;
+  margin-bottom: -.2em;
+}
+@media only screen and (max-width: 576px) {
+  h1:first-child{
+    display: none;
+  }
+}
   @keyframes slideInRight {
     0% {
       opacity: 0;

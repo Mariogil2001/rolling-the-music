@@ -11,8 +11,8 @@
   const latestPodcast = sortedPodcasts[0];
 </script>
 
-<div class="col-md-7">
-  <h3 class="display-4 text-uppercase mb-4">Noticias</h3>
+<div class="container">
+  <h2 class="display-4 mb-4 text-center">Noticias</h2>
 </div>
 <div class="container">
   <div class="row">
@@ -44,6 +44,10 @@
 </div>
 
 <style>
+  h2{
+  font-family: 'Fira Sans', sans-serif;
+  margin-bottom: -.2em;
+}
   /* Media query para pantallas pequeñas */
   @media screen and (max-width: 575.98px) {
     .btn {

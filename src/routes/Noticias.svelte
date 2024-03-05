@@ -5,10 +5,6 @@
   import Box from "../routes/Box.svelte";
   export let id = "noticias";
 
-  let pmpalme =
-    "https://www.ivoox.com/player_ej_124394773_6_1.html?c1=e5f213%27";
-  let bienvenida =
-    "https://www.ivoox.com/player_ej_124120144_6_1.html?c1=ebeb75";
 </script>
 
 <section {id}>

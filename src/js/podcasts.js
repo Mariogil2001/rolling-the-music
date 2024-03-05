@@ -15,4 +15,8 @@ export const podcasts = [
       date: "2024-02-09" 
 
   },
+  { title:"Entrevista a Maar",
+    url:"https://www.ivoox.com/player_ej_125275861_6_1.html?c1=9aa314",
+    description:"Hoy entrevistamos a Maar! Una cantautora valenciana que compone y produce sus propias canciones. Tiene un estilo relajado que transmite calma. Además en este capítulo tenemos la sección ¿Qué prefieres? Donde Maar se enfrentará a preguntas difíciles donde tendrá que escoger entre cantar desafinado o no tocar nunca más la guitarra! También cantará en exclusiva uno de sus últimos temas… \"el bar.\"",
+    date: "2024-03-01"},
 ];
