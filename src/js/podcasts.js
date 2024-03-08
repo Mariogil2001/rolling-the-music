@@ -1,6 +1,6 @@
 export const podcasts = [
   {
-    title: "Entrevista a May de los Badlands",
+    title: "Entrevista a May de \"Badlands\"",
     url: "https://www.ivoox.com/player_ej_125548538_6_1.html?c1=2C3639",
     description:
       "Hola! Bienvenidos a Rolling The music, un podcast donde hablamos de música y damos voz a músicos emergentes. Somos Maya y Julia y en este nuevo podcast hablaremos de actuación en público y de la creación de un universo original. Estamos encantadas de recibir a May que representa su grupo Badlands, un grupo que mezcla el country, el folk y el bluegrass para proponernos una experiencia única.",
