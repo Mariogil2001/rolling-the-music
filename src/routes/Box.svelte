@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="col-sm-6">
-      <h2>{latestPodcast.title}</h2>
+      <h2 class="mb-2">{latestPodcast.title}</h2>
       <p class="text-justify">{latestPodcast.description}</p>
     </div>
   </div>
