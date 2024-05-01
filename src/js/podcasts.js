@@ -2,6 +2,12 @@ const color = "2C3639";
 
 export const podcasts = [
   {
+    title: "Entrevista a Àgueda Segrelles",
+    url:"https://www.ivoox.com/player_ej_128227381_6_1.html?c1=" + color,
+    description:"Àgueda Segrelles está estudiando canto y nos cuenta su experiencia con la música, que es su pasión y sus proyectos de futuro. Compone canciones en castellano, valenciano, inglés y se está planteando componer en italiano! Cada idioma le sugiere un estilo diferente. Se enfrentará a la sección ¿Qué opinas sobre…?",
+    date: "2024-05-01",
+  },
+  {
     title: "Entrevista a Ruido Amor",
     url: "https://www.ivoox.com/player_ej_126327821_6_1.html?c1=" + color,
     description:"Hoy entrevistamos a Noa, Alejandro y María de Ruido Amor, una banda emergente con estilo indie pop. Nos cuentan su experiencia y relación con la música y el lanzamiento de su nuevo EP ciclogénesis explosiva. Escúchanos y descubre cómo se formó la banda, cómo se conocieron y sus futuros proyectos!! Podrás escucharles en Spotify o el 4 de abril en el pub 46zero20 en vivo!!" ,
