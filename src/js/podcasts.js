@@ -2,6 +2,13 @@ const color = "2C3639";
 
 export const podcasts = [
   {
+    title: "Crónica del Montgó Fest",
+    url: "https://www.ivoox.com/player_ej_129047799_6_1.html?c1=" + color,
+    description:
+      "El pasado 3 y 4 de mayo estuvimos cubriendo el Montgó Fest como prensa. Descubre nuestra experiencia en el primer festival en el que trabajamos como periodistas, te contamos cómo nos fue y los consejos que tienes que saber. Hacemos un recorrido de los grandes artistas que estaban en el cartel de esta 11a edición. Síguenos en instagram (@rollingthemusic) para ver todo lo relacionado con el festival!!",
+      date: "2024-05-17", 
+  },
+  {
     title: "Entrevista a Àgueda Segrelles",
     url:"https://www.ivoox.com/player_ej_128227381_6_1.html?c1=" + color,
     description:"Àgueda Segrelles está estudiando canto y nos cuenta su experiencia con la música, que es su pasión y sus proyectos de futuro. Compone canciones en castellano, valenciano, inglés y se está planteando componer en italiano! Cada idioma le sugiere un estilo diferente. Se enfrentará a la sección ¿Qué opinas sobre…?",
