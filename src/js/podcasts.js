@@ -2,6 +2,12 @@ const color = "2C3639";
 
 export const podcasts = [
   {
+    title: "Entrevista a Corazones eléctricos",	
+    url: "https://www.ivoox.com/player_ej_130338973_6_1.html?c1=" + color,
+    description: "Hemos entrevistado a Pau Monteagudo, voz y guitarra de Corazones eléctricos, un proyecto que nace de la necesidad del cantante de expresarse con sus propias canciones. Este verano estarán en varios festivales de rock and roll y cantarán canciones de su último disco “De amor y rabia”. Nuestro invitado también se enfrentará a la sección ¿Qué prefieres?",
+    date: "2024-06-07",
+  },
+  {
     title: "Crónica del Montgó Fest",
     url: "https://www.ivoox.com/player_ej_129047799_6_1.html?c1=" + color,
     description:
